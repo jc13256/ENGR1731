@@ -1,0 +1,30 @@
+% This program plots four different graphs of the same function e^(2x) with
+% four different plotting methods (plot, semilogx,semilogy, loglog). Each
+% plot has its own title and X-Y label
+x = 0:(1/25):4;
+y = exp(2*x);
+
+subplot(2,2,1);
+plot(x,y);
+xlabel('X');
+ylabel('Y');
+title('Using Simple X-Y Plot')
+
+subplot(2,2,2);
+semilogx(x,y);
+xlabel('X');
+ylabel('Y');
+title('Using Semilogx Plot')
+
+subplot(2,2,3);
+semilogy(x,y);
+xlabel('X');
+ylabel('Y');
+title('Using Semilogy Plot')
+
+subplot(2,2,4);
+loglog(x,y)
+xlabel('X');
+ylabel('Y');
+title('Using Log-Log Plot')
+
