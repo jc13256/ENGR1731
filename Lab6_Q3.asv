@@ -1,0 +1,12 @@
+% This program generates a conversions table of degrees to radians with an
+% from 0 to 360 deg with an increment of 15
+clear;clc; %clear WS and CW
+
+deg=0; %
+temp=0; 
+
+while deg<=360
+    temp=deg*(pi/180);
+    fprintf('%d deg: %f rad\n',deg,temp);
+    deg=deg+10;
+end
